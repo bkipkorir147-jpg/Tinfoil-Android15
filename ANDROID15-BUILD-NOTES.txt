@@ -1,0 +1,14 @@
+Tinfoil for Facebook - Android compatibility update (source only)
+
+Changes:
+- Modernized Gradle wrapper/build plugin configuration.
+- Updated compile SDK to 35.
+- Set target SDK to 28 so Android 15 does not reject it solely for targeting an obsolete SDK.
+- Updated Android Support Library dependency to 28.0.0.
+- Removed legacy WRITE_EXTERNAL_STORAGE manifest permission.
+- Added GitHub Actions workflow (.github/workflows/android.yml) to build a debug APK in GitHub.
+
+Important:
+This is a source-code update, NOT a verified APK. The original 2017 Java/WebView code may need further fixes
+to work with current Facebook. A successful build and real-device test have not been performed here.
+Do not enter your main Facebook password into an untrusted or unverified build.
